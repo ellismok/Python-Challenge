@@ -29,8 +29,6 @@ with open(election_data) as csvfile:                                            
 # The winner of the election based on popular vote
     Election_Winner = candidates[votes_pct.index(max(votes_pct))]               # grab max % in votes_pct >>> find its index >>> apply to candidates to find name
 
-# create for loop to print out each candidate's name, % of votes, and total votes
-
 #save as txt file
 with open('Poll_Data_Analysis.txt', 'w') as txtfile:
   
